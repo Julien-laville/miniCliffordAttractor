@@ -1,1 +1,35 @@
-<svg onload="[A,B,C,D]=prompt('A B C D','-1.8 -2 -.5 -.9').split` `;with(Math)setInterval(V=>{innerHTML+=`<text x=${250+99*(X=sin(A*Y)+C*cos(A*U))} y=${250+99*(Y=sin(B*U)+D*cos(B*Y))}>.`;U=X},U=Y=1)"width=600 height=600>
+<body onload="draw()">
+
+<canvas id="can" width="600"  height="600" style="background:#000">
+
+    
+    <script>
+        const ctx = can.getContext('2d')
+        var A = -1.8
+        var B = -3
+        var C = -0.5 
+        var D = 0.9
+        var U = 1
+        var Y = 1
+        count = 0
+        function draw() {
+            setInterval(addPoint,0)
+        }
+
+        
+        function addPoint() {
+            x=250+99*(X=Math.sin(A*Y)+C*Math.cos(A*U))
+            y=250+99*(Y=Math.sin(B*U)+D*Math.cos(B*Y))
+            ctx.beginPath()
+            ctx.arc(x,y,0.2,0,Math.PI*2)
+            ctx.fillStyle = "hsl(" + (x + y)%360 + ", 95%, 75%)"
+            ctx.fill()
+            U=X
+            count ++
+        }
+    
+    
+    
+   
+    </script>
+    </body>
