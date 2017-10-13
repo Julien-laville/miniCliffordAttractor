@@ -5,15 +5,17 @@
     
     <script>
         const ctx = can.getContext('2d')
-        var A = -1.8
-        var B = -3
-        var C = -0.5 
-        var D = 0.9
+        var A = -1.7 // a = -1.7, b = 1.8, c = -1.9, d = -0.4 
+        var B = -1.8
+        var C = -1.9
+        var D = -0.4
         var U = 1
         var Y = 1
         count = 0
         function draw() {
-            setInterval(addPoint,0)
+            for(var i = 0; i < 1000; i ++) {
+                addPoint()
+            }
         }
 
         
@@ -21,11 +23,12 @@
             x=250+99*(X=Math.sin(A*Y)+C*Math.cos(A*U))
             y=250+99*(Y=Math.sin(B*U)+D*Math.cos(B*Y))
             ctx.beginPath()
-            ctx.arc(x,y,0.2,0,Math.PI*2)
-            ctx.fillStyle = "hsl(" + (x + y)%360 + ", 95%, 75%)"
+            ctx.arc(x,y,0.04,0,Math.PI*2)
+            ctx.fillStyle = "hsla(200, 60%, 80%,0.1)"
             ctx.fill()
             U=X
             count ++
+            setTimeout(draw, 10);
         }
     
     
