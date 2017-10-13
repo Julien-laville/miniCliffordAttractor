@@ -1,0 +1,22 @@
+{
+  "name": "clifford-attractor",
+  "version": "1.0.0",
+  "description": "ungolfing xem project",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julien-laville/miniCliffordAttractor.git"
+  },
+  "author": "ju",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Julien-laville/miniCliffordAttractor/issues"
+  },
+  "homepage": "https://github.com/Julien-laville/miniCliffordAttractor#readme",
+  "dependencies": {
+    "canvas": "^1.6.7"
+  }
+}
