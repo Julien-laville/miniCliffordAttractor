@@ -33,7 +33,7 @@ module.exports = function(canvasSize, frameCount, a, b, c, d) {
             pngTmps.push(lastCreatedImage)
         }
         if(count <= frameCount) {
-            painter.draw((a+(count)/60), (b+(count)/60), c, (d+(count)/60))
+            painter.draw((a+(count)/100), (b+(count)/100), c, (d+(count)/100))
             painter.getImage(next)
         } else {
             console.log('Painted',count,'images')
