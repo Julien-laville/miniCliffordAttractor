@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Julien-laville/miniCliffordAttractor#readme",
   "dependencies": {
-    "canvas": "^1.6.7"
+    "canvas": "^1.6.7",
+    "progress": "^2.0.0",
+    "temp": "^0.8.3",
+    "tmp": "0.0.33"
   }
 }
